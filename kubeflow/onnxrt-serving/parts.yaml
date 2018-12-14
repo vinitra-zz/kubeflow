@@ -1,0 +1,29 @@
+{
+   "name": "onnxrt-serving",
+   "apiVersion": "0.0.1",
+   "kind": "ksonnet.io/parts",
+   "description": "ONNXRuntime serving is a server for ONNX models.\n",
+   "author": "kubeflow team <kubeflow-team@google.com>",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/kubeflow/kubeflow"
+   },
+   "bugs": {
+      "url": "https://github.com/kubeflow/kubeflow/issues"
+   },
+   "keywords": [
+      "kubeflow",
+      "onnxruntime",
+      "database"
+   ],
+   "quickStart": {
+      "prototype": "io.ksonnet.pkg.onnxrt-serving",
+      "componentName": "onnxrt-serving",
+      "flags": {
+         "name": "onnxrt-serving",
+         "namespace": "default"
+      },
+      "comment": "Run ONNXRuntime Serving"
+   },
+   "license": "Apache 2.0"
+}
