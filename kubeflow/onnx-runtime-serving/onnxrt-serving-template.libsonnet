@@ -27,7 +27,7 @@
 
     local modelServerContainer = {
       command: [
-        "/usr/bin/tensorflow_model_server",
+        "/usr/bin/ONNXRuntime_model_server",
       ],
       args: [
         "--port=9000",

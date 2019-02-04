@@ -26,8 +26,8 @@
     // in which case the image used will still depend on whether GPUs are used or not.
     // Users can also override modelServerImage in which case the user supplied value will always be used
     // regardless of numGpus.
-    defaultCpuImage: "tensorflow/serving:1.11.1",
-    defaultGpuImage: "tensorflow/serving:1.11.1-gpu",
+    defaultCpuImage: "ONNXRuntime/serving:0.2.0",
+    defaultGpuImage: "ONNXRuntime/serving:0.2.0-gpu",
     modelServerImage: if $.params.numGpus == 0 then
       $.params.defaultCpuImage
     else
@@ -105,7 +105,7 @@
       image: $.params.modelServerImage,
       imagePullPolicy: "IfNotPresent",
       command: [
-        "/usr/bin/tensorflow_model_server",
+        "/usr/bin/ONNXRuntime_model_server",
       ],
       args: [
         "--port=9000",

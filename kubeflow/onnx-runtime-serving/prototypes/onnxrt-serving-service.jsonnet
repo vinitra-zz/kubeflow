@@ -1,7 +1,7 @@
 // @apiVersion 0.1
 // @name io.ksonnet.pkg.onnxrt-serving-service
-// @description TensorFlow serving
-// @shortDescription A TensorFlow serving model
+// @description ONNXRuntime serving
+// @shortDescription A ONNXRuntime serving model
 // @param name string Name to give to each of the components
 // @optionalParam serviceType string ClusterIP The k8s service type for onnxrt serving.
 // @optionalParam modelName string null The model name
